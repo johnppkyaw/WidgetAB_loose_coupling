@@ -15,10 +15,12 @@ public class LooseCoupling {
 		// is possible without changing GoodTraveler class
 		GoodTraveler gt = new GoodTraveler();
 		//YOUR_CODE_HERE // Inject Car dependency
+		gt.setV(new Car());
 		//YOUR_CODE_HERE // start journey by Car
+		gt.startJourney();
 		//YOUR_CODE_HERE // Inject Bike dependency
+		gt.setV(new Bike());
 		//YOUR_CODE_HERE// Start journey by Bike
-
-		
+		gt.startJourney();
 	}
 }
